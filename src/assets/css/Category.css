@@ -1,0 +1,15 @@
+.Box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.innerBox {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+}

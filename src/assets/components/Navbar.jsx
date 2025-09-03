@@ -1,4 +1,9 @@
 import React from "react";
+import products from "../../data/products.json";
+import "../css/Navbar.css";
+import { Link } from "react-router-dom";
+
+const slugs = Array.from(new Set(products.map((p) => p.categorySlug)));
 
 export default function Navbar() {
   return (
@@ -29,22 +34,44 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-60 p-2 shadow"
             >
+              <li className="menu-list">
+                <Link className="menu-list" to="/">
+                  Home
+                </Link>
+              </li>
+
+              {/* Category submenu */}
+
               <li>
-                <a>Homepage</a>
+                <details>
+                  <summary className="menu-list">Categories</summary>
+                  <ul>
+                    {slugs.map((slug) => (
+                      <li key={slug}>
+                        <Link to={`/category/${slug}`}>{slug}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+
+              <li>
+                <Link className="menu-list" to="/faq/">
+                  FAQ
+                </Link>
               </li>
               <li>
-                <a>Portfolio</a>
-              </li>
-              <li>
-                <a>About</a>
+                <Link className="menu-list" to="/contact">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <p style={{ fontSize: "26px" }}>UrbanCart</p>
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
