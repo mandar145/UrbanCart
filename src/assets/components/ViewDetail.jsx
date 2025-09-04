@@ -53,9 +53,10 @@ export default function ViewDetail() {
             £{product.price}
           </div>
           <p style={{ marginBottom: 12 }}>{product.description}</p>
+          {/*          
           <div style={{ fontSize: 14, marginBottom: 16 }}>
             In stock: {product.stock}
-          </div>
+          </div> */}
 
           <div style={{ display: "flex", gap: 12 }}>
             <button

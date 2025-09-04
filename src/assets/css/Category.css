@@ -5,11 +5,21 @@
   justify-content: center;
 }
 
+.cat-body {
+  padding: 16px;
+  /* background-color: #dbe4c9; */
+}
+.title {
+  font-weight: 600;
+  font-size: 32px;
+}
 .innerBox {
-  border: 1px solid #ddd;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 8px;
-  width: 200px;
-  padding: 8px;
+  width: 300px;
+  padding: 20px;
   box-sizing: border-box;
-  text-align: center;
+  background-color: #ffffff69;
+  text-align: left;
+  word-wrap: break-word;
 }

@@ -1,7 +1,26 @@
 .menu-list {
   font-size: medium;
 }
-
+.menu-list2 {
+  font-size: 14px;
+  text-transform: capitalize;
+}
 .navbar {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* background-color: #8aa624; */
+}
+
+.dropdown-menu {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 200px;
+}
+
+.navbar .logo {
+  max-width: 200px;
+  height: 90px;
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
 }
