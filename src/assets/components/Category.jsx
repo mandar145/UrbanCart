@@ -10,9 +10,11 @@ const Category = () => {
   const items = products.filter((p) => p.categorySlug === slug);
   // c) Decide title (category name or slug if empty)
   let title = slug;
-  if (items.length > 0) {
-    title = items[0].categoryLabel;
-  }
+  title = title.toUpperCase().charAt(0) + title.slice(1);
+
+  // if (items.length > 0) {
+  //   title = items[0].categoryLabel;
+  // }
 
   // 3) Pagination setup
   const [searchParams, setSearchParams] = useSearchParams();
