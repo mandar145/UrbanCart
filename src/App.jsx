@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./assets/components/ScrollToTop";
 import Frame from "./assets/components/Frame";
 import Home from "./assets/components/Home";
 import Category from "./assets/components/Category";
@@ -10,6 +11,7 @@ import ViewDetail from "./assets/components/ViewDetail";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         {/* Layout route: Frame always renders (Navbar, etc.) */}
         <Route element={<Frame />}>

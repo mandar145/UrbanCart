@@ -14,7 +14,7 @@
   font-size: 32px;
 }
 .innerBox {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
   border-radius: 8px;
   width: 300px;
   padding: 20px;
@@ -22,4 +22,9 @@
   background-color: #ffffff69;
   text-align: left;
   word-wrap: break-word;
+}
+
+.innerBox:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
