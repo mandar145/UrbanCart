@@ -1,9 +1,1 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+/* Base reset handled in global.css */
